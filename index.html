@@ -51,8 +51,10 @@
           </div>
           <h1>AI Image Generator</h1>
         </div>
-        <button class="theme-toggle">
+        <!-- light and dark mode toggle -->
+        <button class="theme-toggle" onclick="toggleTheme()">
           <i class="fa-solid fa-moon"></i>
+          <!-- Ended -->
         </button>
       </header>
       <div class="main-content">
@@ -125,5 +127,23 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
       <script src="script.js"></script>
+      <script>
+        function toggleTheme() {
+          const body = document.body;
+          body.classList.toggle('dark-mode');
+      
+          const isDarkMode = body.classList.contains('dark-mode');
+          const textColor = isDarkMode ? 'white' : 'black';
+      
+          document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, a, span, li').forEach(element => {
+            element.style.color = textColor;
+          });
+        }
+      </script>
+      <style>
+        .dark-mode {
+          background-color: #121212;
+        }
+      </style>
   </body>
 </html>
