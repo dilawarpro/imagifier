@@ -35,36 +35,6 @@
         color: white;
         background-color: black;
       }
-
-      .fancybox-fadeIn {
-        animation: fadeIn 0.5s ease-in-out;
-      }
-
-      .fancybox-fadeOut {
-        animation: fadeOut 0.5s ease-in-out;
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: scale(0.95);
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-
-      @keyframes fadeOut {
-        from {
-          opacity: 1;
-          transform: scale(1);
-        }
-        to {
-          opacity: 0;
-          transform: scale(0.95);
-        }
-      }
     </style>
   </head>
   <body data-theme="light">
@@ -137,11 +107,10 @@
             <div class="select-wrapper">
               <select class="custom-select" id="count-select" required>
                 <option value="" selected disabled>Image Count</option>
-                <option value="2">2 Image</option>
+                <option value="1">1 Image</option>
+                <option value="2">2 Images</option>
+                <option value="3">3 Images</option>
                 <option value="4">4 Images</option>
-                <option value="8">8 Images</option>
-                <option value="10">10 Images</option>
-                <!-- <option value="8">8 Images</option> -->
               </select>
             </div>
             <div class="select-wrapper">
@@ -300,50 +269,6 @@
           const savedTheme = localStorage.getItem('theme') || 'light';
           document.body.setAttribute('data-theme', savedTheme);
         });
-
-        Fancybox.bind("[data-fancybox='gallery']", {
-          animated: true, // Enable animations
-          showClass: "fancybox-fadeIn", // Custom animation for showing
-          hideClass: "fancybox-fadeOut", // Custom animation for hiding
-          dragToClose: true, // Allow dragging to close
-          Image: {
-            zoom: true, // Enable zoom animation
-          },
-          Thumbs: {
-            autoStart: true, // Show thumbnails by default
-          },
-        });
-
-        const createImageCards = (selectedModel, imageCount, aspectRatio, promptText) => {
-          galleryGrid.style.display = "grid"; // Show the gallery grid
-          galleryGrid.innerHTML = ""; // Clear any existing content in the grid
-          for (let i = 0; i < imageCount; i++) {
-            galleryGrid.innerHTML += `
-              <div class="img-card loading" id="img-card-${i}" style="aspect-ratio: ${aspectRatio}">
-                <div class="status-container">
-                  <div class="spinner"></div>
-                  <i class="fa-solid fa-triangle-exclamation"></i>
-                  <p class="status-text">Generating...</p>
-                </div>
-              </div>`;
-          }
-          generateImages(selectedModel, imageCount, aspectRatio, promptText); // Generate Images
-        };
-
-        const updateImageCard = async (index, blob) => {
-          const imageUrl = await blobToDataURL(blob); // Convert blob to base64
-          const fileName = `imagifier.dilawarpro.com Image ${index + 1}.png`; // Set a prefixed file name
-          const imgCard = document.getElementById(`img-card-${index}`);
-          if (!imgCard) return;
-          imgCard.classList.remove("loading");
-          imgCard.innerHTML = `
-            <a data-fancybox="gallery" href="${imageUrl}" class="fancybox-link">
-              <img class="result-img" src="${imageUrl}" alt="Generated Image" />
-            </a>
-            <a href="${imageUrl}" download="${fileName}" class="img-download-btn" title="Download Image">
-              <i class="fa-solid fa-download"></i>
-            </a>`;
-        };
       </script>
   </body>
 </html>
