@@ -23,14 +23,6 @@ const examplePrompts = [
   "A cute and playful anime-style girl in a tiny pastel bikini, licking an ice cream cone on a summer beach, her adorable big eyes sparkling mischievously.",
   
   "A ruggedly handsome man in an unbuttoned white shirt, standing on a tropical beach, his chiseled abs glistening under the sunset as he runs a hand through his messy hair.",
-  "A confident and muscular bad boy in a leather jacket, leaning against a motorcycle, his smoldering gaze and sharp jawline making him dangerously irresistible.",
-  "A fit and sexy lifeguard standing at the edge of a pool, his sculpted chest dripping with water as he smirks confidently at the viewer.",
-  "A charming surfer dude with tousled wet hair, stepping out of the ocean, his toned body glistening with seawater as he shakes his hair back with a carefree smile.",
-  "A handsome businessman in a perfectly tailored suit, sitting in a luxury penthouse with a glass of whiskey, his intense eyes and confident smirk radiating power and sex appeal.",
-  "A seductive male model in low-rise jeans, shirtless and reclining on a leather couch, his sharp features and piercing gaze making him utterly irresistible.",
-  "A stylish bad boy in a tight black t-shirt, arms crossed as he leans against a sports car under neon lights, his biceps flexing as he gives a cocky smirk.",
-  "A gorgeous male fitness model at the gym, lifting weights with his perfectly sculpted arms, sweat glistening on his toned abs as he focuses with fierce intensity.",
-  "A mysterious and alluring vampire prince with piercing red eyes, his chiseled body wrapped in a dark cloak as he smirks, exuding dangerous charm.",
   "A playful and flirty guy at a pool party, wearing only swim trunks, splashing water as he flashes a teasing, sexy smile that melts hearts instantly."
 ];
 
