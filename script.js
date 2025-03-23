@@ -7,25 +7,26 @@ const galleryGrid = document.querySelector(".gallery-grid");
 const modelSelect = document.getElementById("model-select");
 const countSelect = document.getElementById("count-select");
 const ratioSelect = document.getElementById("ratio-select");
-const API_KEY = "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"; // Hugging Face API Key
-// Example prompts
+const API_KEY = "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";
+
 const examplePrompts = [
-  "A colossal tree with an entire futuristic city built within its glowing, twisting roots and branches, floating in the sky above a neon-lit ocean.",
-  "A mystical black cat with cosmic eyes, walking along the edge of a glowing portal that reveals a parallel universe filled with floating islands and celestial creatures.",
-  "A forgotten temple submerged in crystal-clear water, where ancient statues of deities are covered in coral, and fish swim through the remains of a lost civilization.",
-  "A nomadic caravan traveling across a desert of shifting, golden dunes under a sky filled with floating whale-like creatures that glow with soft, pulsating light.",
-  "A clockwork phoenix rising from a storm of metallic feathers, its body made of intricate gears and glowing molten energy, soaring over a futuristic cityscape.",
-  "A hidden doorway in a forest that leads to a secret garden floating in the void, where gravity bends, and waterfalls flow in reverse toward the sky.",
-  "A celestial dragon made of pure stardust, coiling around a massive ringed planet, with its eyes glowing like miniature galaxies.",
-  "A tiny village built inside the petals of a massive, bioluminescent flower that blooms only under the light of a mysterious blue moon.",
-  "An astronaut exploring the ruins of an ancient alien civilization on a distant planet, where glowing hieroglyphs shift and change as they step closer.",
-  "A lighthouse standing at the edge of a floating sea, its beam illuminating a sky filled with ghostly ships sailing through the clouds.",
-  "A mystical bakery where enchanted pastries float in the air, changing colors and shapes, while a witch in a starry apron prepares a cake that shimmers like the night sky.",
-  "A futuristic samurai, clad in high-tech armor with glowing neon accents, standing atop a rain-soaked rooftop in a cyberpunk city filled with holograms and flying lanterns.",
-  "A lost library hidden beneath a frozen lake, where ancient books encased in ice glow softly, revealing glimpses of forgotten knowledge.",
-  "A lone traveler standing before a colossal stone doorway carved into a mountain, where mysterious glowing runes shift and rearrange themselves like a living puzzle.",
-  "A surreal carnival where the rides float in midair, the roller coasters twist through interdimensional portals, and the cotton candy glows like tiny galaxies."
+  "A breathtakingly beautiful woman in a sheer, flowing red gown, standing on a balcony at midnight, the city lights illuminating her flawless curves as she gazes seductively at the viewer.",
+  "A sultry femme fatale with smoldering eyes, dressed in a form-fitting black dress with a dangerously high slit, leaning against a luxury sports car under neon city lights.",
+  "A stunning woman stepping out of a crystal-clear infinity pool, water droplets glistening on her sun-kissed skin as she looks over her shoulder with a teasing smile.",
+  "A seductive belly dancer in an exotic golden outfit, her toned body moving hypnotically as glowing lanterns cast flickering shadows on her shimmering curves.",
+  "A confident woman in a lace corset and silk robe, standing at the window of a high-rise penthouse, her hair tousled as the cityscape glows behind her.",
+  "A beach goddess in a barely-there bikini, lying on golden sand with waves gently caressing her body, her piercing gaze full of temptation and desire.",
+  "A dark enchantress in a figure-hugging, off-the-shoulder black dress, casting a spell with her intense gaze as glowing magical symbols swirl around her.",
+  "A cyberpunk seductress in a neon-lit club, her glowing tattoos tracing along her curves, her metallic bodysuit accentuating every move as she leans in with a playful smirk.",
+  "A sultry cowgirl leaning against a wooden fence, her tight denim shorts hugging her hips as she tips her hat and flashes a wickedly inviting smile.",
+  "A stunning fashion model on a dimly lit runway, her sheer dress flowing around her as she walks with a hypnotic, slow stride, exuding pure confidence and allure.",
+  "A temptress in silk sheets, her body draped in the soft fabric as she lies back with a knowing smile, moonlight casting a glow on her flawless skin.",
+  "A passionate tango dancer in a dangerously low-cut dress, pressed against her partner as they move in perfect harmony, their chemistry almost tangible.",
+  "A wild, untamed beauty dancing in the rain, her wet dress clinging to her curves as she tilts her head back, lost in the moment of raw sensuality.",
+  "A powerful queen in a barely-there golden ensemble, lounging on a throne adorned with crimson velvet, her gaze commanding yet filled with untamed passion.",
+  "A seductive masked woman at an exclusive masquerade ball, her lace mask enhancing the mystery in her smoldering eyes as she teases the viewer with a playful smile."
 ];
+
 
 // Set theme based on saved preference or system default
 (() => {
