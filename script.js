@@ -20,7 +20,6 @@ const examplePrompts = [
   "A temptress in silk sheets, wearing only a lacy nightgown, lying back with a knowing smile as moonlight casts a glow on her flawless skin and tousled hair.",
   "A sexy cyberpunk babe in a neon-lit nightclub, wearing a glowing bodysuit that hugs her curves perfectly, her intense gaze and confident smirk radiating pure allure.",
   "A ravishing bikini model lying on a luxury yacht, sipping a cocktail as the sun highlights every perfect curve of her flawless, tanned body.",
-  "A cute and playful anime-style girl in a tiny pastel bikini, licking an ice cream cone on a summer beach, her adorable big eyes sparkling mischievously.",
   
   "A ruggedly handsome man in an unbuttoned white shirt, standing on a tropical beach, his chiseled abs glistening under the sunset as he runs a hand through his messy hair.",
   "A playful and flirty guy at a pool party, wearing only swim trunks, splashing water as he flashes a teasing, sexy smile that melts hearts instantly."
