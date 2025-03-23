@@ -141,6 +141,7 @@
                 <option value="2">2 Images</option>
                 <option value="3">3 Images</option>
                 <option value="4">4 Images</option>
+                <option value="8">8 Images</option>
               </select>
             </div>
             <div class="select-wrapper">
@@ -312,6 +313,26 @@
             autoStart: true, // Show thumbnails by default
           },
         });
+
+        const createImageCards = (selectedModel, imageCount, aspectRatio, promptText) => {
+          galleryGrid.style.display = "grid"; // Show the gallery grid
+          galleryGrid.innerHTML = ""; // Clear any existing content in the grid
+          for (let i = 0; i < imageCount; i++) {
+            galleryGrid.innerHTML += `
+              <div class="img-card loading" id="img-card-${i}" style="aspect-ratio: ${aspectRatio}">
+                <div class="status-container">
+                  <div class="spinner"></div>
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                  <p class="status-text">Generating...</p>
+                </div>
+              </div>`;
+          }
+          // Stagger animation
+          document.querySelectorAll(".img-card").forEach((card, i) => {
+            setTimeout(() => card.classList.add("animate-in"), 100 * i);
+          });
+          generateImages(selectedModel, imageCount, aspectRatio, promptText); // Generate Images
+        };
       </script>
   </body>
 </html>
