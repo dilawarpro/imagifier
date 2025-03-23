@@ -137,11 +137,11 @@
             <div class="select-wrapper">
               <select class="custom-select" id="count-select" required>
                 <option value="" selected disabled>Image Count</option>
-                <option value="1">1 Image</option>
-                <option value="2">2 Images</option>
-                <option value="3">3 Images</option>
+                <option value="2">2 Image</option>
                 <option value="4">4 Images</option>
                 <option value="8">8 Images</option>
+                <option value="10">10 Images</option>
+                <!-- <option value="8">8 Images</option> -->
               </select>
             </div>
             <div class="select-wrapper">
@@ -327,11 +327,22 @@
                 </div>
               </div>`;
           }
-          // Stagger animation
-          document.querySelectorAll(".img-card").forEach((card, i) => {
-            setTimeout(() => card.classList.add("animate-in"), 100 * i);
-          });
           generateImages(selectedModel, imageCount, aspectRatio, promptText); // Generate Images
+        };
+
+        const updateImageCard = async (index, blob) => {
+          const imageUrl = await blobToDataURL(blob); // Convert blob to base64
+          const fileName = `imagifier.dilawarpro.com Image ${index + 1}.png`; // Set a prefixed file name
+          const imgCard = document.getElementById(`img-card-${index}`);
+          if (!imgCard) return;
+          imgCard.classList.remove("loading");
+          imgCard.innerHTML = `
+            <a data-fancybox="gallery" href="${imageUrl}" class="fancybox-link">
+              <img class="result-img" src="${imageUrl}" alt="Generated Image" />
+            </a>
+            <a href="${imageUrl}" download="${fileName}" class="img-download-btn" title="Download Image">
+              <i class="fa-solid fa-download"></i>
+            </a>`;
         };
       </script>
   </body>
