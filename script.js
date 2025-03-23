@@ -10,22 +10,23 @@ const ratioSelect = document.getElementById("ratio-select");
 const API_KEY = "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"; // Hugging Face API Key
 // Example prompts
 const examplePrompts = [
-  "A magic forest with glowing plants and fairy homes among giant mushrooms",
-  "An old steampunk airship floating through golden clouds at sunset",
-  "A future Mars colony with glass domes and gardens against red mountains",
-  "A dragon sleeping on gold coins in a crystal cave",
-  "An underwater kingdom with merpeople and glowing coral buildings",
-  "A floating island with waterfalls pouring into clouds below",
-  "A witch's cottage in fall with magic herbs in the garden",
-  "A robot painting in a sunny studio with art supplies around it",
-  "A magical library with floating glowing books and spiral staircases",
-  "A Japanese shrine during cherry blossom season with lanterns and misty mountains",
-  "A cosmic beach with glowing sand and an aurora in the night sky",
-  "A medieval marketplace with colorful tents and street performers",
-  "A cyberpunk city with neon signs and flying cars at night",
-  "A peaceful bamboo forest with a hidden ancient temple",
-  "A giant turtle carrying a village on its back in the ocean",
+  "A colossal tree with an entire futuristic city built within its glowing, twisting roots and branches, floating in the sky above a neon-lit ocean.",
+  "A mystical black cat with cosmic eyes, walking along the edge of a glowing portal that reveals a parallel universe filled with floating islands and celestial creatures.",
+  "A forgotten temple submerged in crystal-clear water, where ancient statues of deities are covered in coral, and fish swim through the remains of a lost civilization.",
+  "A nomadic caravan traveling across a desert of shifting, golden dunes under a sky filled with floating whale-like creatures that glow with soft, pulsating light.",
+  "A clockwork phoenix rising from a storm of metallic feathers, its body made of intricate gears and glowing molten energy, soaring over a futuristic cityscape.",
+  "A hidden doorway in a forest that leads to a secret garden floating in the void, where gravity bends, and waterfalls flow in reverse toward the sky.",
+  "A celestial dragon made of pure stardust, coiling around a massive ringed planet, with its eyes glowing like miniature galaxies.",
+  "A tiny village built inside the petals of a massive, bioluminescent flower that blooms only under the light of a mysterious blue moon.",
+  "An astronaut exploring the ruins of an ancient alien civilization on a distant planet, where glowing hieroglyphs shift and change as they step closer.",
+  "A lighthouse standing at the edge of a floating sea, its beam illuminating a sky filled with ghostly ships sailing through the clouds.",
+  "A mystical bakery where enchanted pastries float in the air, changing colors and shapes, while a witch in a starry apron prepares a cake that shimmers like the night sky.",
+  "A futuristic samurai, clad in high-tech armor with glowing neon accents, standing atop a rain-soaked rooftop in a cyberpunk city filled with holograms and flying lanterns.",
+  "A lost library hidden beneath a frozen lake, where ancient books encased in ice glow softly, revealing glimpses of forgotten knowledge.",
+  "A lone traveler standing before a colossal stone doorway carved into a mountain, where mysterious glowing runes shift and rearrange themselves like a living puzzle.",
+  "A surreal carnival where the rides float in midair, the roller coasters twist through interdimensional portals, and the cotton candy glows like tiny galaxies."
 ];
+
 // Set theme based on saved preference or system default
 (() => {
   const savedTheme = localStorage.getItem("theme");
