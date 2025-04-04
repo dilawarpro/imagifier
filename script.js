@@ -10,19 +10,27 @@ const ratioSelect = document.getElementById("ratio-select");
 const API_KEY = "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";
 
 const examplePrompts = [
-  "A breathtakingly beautiful girl in a micro bikini, lying on a sunbed, her flawless curves glistening with tanning oil as she tilts her sunglasses and smiles seductively.",
-  "A cute and sexy girl in a tiny crop top and ultra-short denim shorts, leaning against a classic convertible, biting her lip playfully as the wind teases her hair.",
-  "A stunning beach goddess in a barely-there string bikini, stepping out of the ocean, water dripping down her sun-kissed skin as she runs her fingers through her wet hair.",
-  "A seductive college girl in a tight white tank top and mini skirt, sitting on a desk with one leg crossed, twirling a pen between her lips as she smirks teasingly.",
-  "A gorgeous roller-skating girl in booty shorts and a tied-up crop top, gliding down a palm-lined boulevard, her toned legs and playful smile radiating summer vibes.",
-  "A wild and untamed beauty in a silky red dress with a deep slit, dancing barefoot in the rain, her wet clothes clinging to every curve as she tilts her head back in bliss.",
-  "A sultry cowgirl in ultra-tight daisy dukes and a tied plaid shirt, standing against a wooden fence, her toned stomach exposed as she tips her hat with a wicked grin.",
-  "A temptress in silk sheets, wearing only a lacy nightgown, lying back with a knowing smile as moonlight casts a glow on her flawless skin and tousled hair.",
-  "A sexy cyberpunk babe in a neon-lit nightclub, wearing a glowing bodysuit that hugs her curves perfectly, her intense gaze and confident smirk radiating pure allure.",
-  "A ravishing bikini model lying on a luxury yacht, sipping a cocktail as the sun highlights every perfect curve of her flawless, tanned body.",
-  
-  "A ruggedly handsome man in an unbuttoned white shirt, standing on a tropical beach, his chiseled abs glistening under the sunset as he runs a hand through his messy hair.",
-  "A playful and flirty guy at a pool party, wearing only swim trunks, splashing water as he flashes a teasing, sexy smile that melts hearts instantly."
+  "A highly advanced humanoid robot with a sleek, metallic exoskeleton, glowing blue eyes, and intricate mechanical joints, standing in a futuristic research lab surrounded by holographic displays and AI-driven tools.",
+  "A towering cybernetic mech with reinforced armor, standing in a neon-lit cityscape as drones hover around it, scanning the area with glowing sensors.",
+  "A biomechanical AI-powered drone with articulated limbs and adaptive wings, soaring over a futuristic megacity, scanning skyscrapers with precision lasers.",
+  "A hyper-realistic robotic police unit patrolling a bustling futuristic metropolis, equipped with cutting-edge surveillance systems and non-lethal crowd control tech.",
+  "A self-learning AI android with synthetic skin and exposed circuitry, sitting in a high-tech lounge, processing vast amounts of data through a holographic interface.",
+  "A highly detailed robotic arm assembling microchips with extreme precision in a fully automated AI-driven factory, surrounded by an army of smaller robotic assistants.",
+  "A colossal cybernetic war machine walking through a battlefield, its mechanical limbs covered in reinforced plating while tactical drones provide real-time battlefield analysis.",
+  "A futuristic robotic chef in a high-tech kitchen, preparing gourmet dishes with precision laser-cutting tools, molecular gastronomy technology, and AI-assisted plating.",
+  "A swarm of tiny nanobot repair drones working together to fix a damaged spacecraft, seamlessly moving in perfect synchronization to rebuild its exterior.",
+  "A cybernetically enhanced robotic dog with a sleek carbon-fiber exoskeleton and AI-powered tracking systems, sprinting through a futuristic park alongside autonomous drones.",
+  "A towering industrial construction robot welding a skyscraper in real-time, its arms extending with telescopic precision while AR-guided drones monitor the structure.",
+  "A next-generation rescue robot navigating through disaster rubble using AI-driven sensors, deploying micro-drones to locate survivors with infrared scanning.",
+  "A futuristic sentient AI housed within a towering glass and metal server hub, its core pulsating with streams of glowing data as quantum processors compute at unimaginable speeds.",
+  "A sleek autonomous racing robot speeding through a neon-lit track, its AI-driven aerodynamic design shifting dynamically to optimize speed and efficiency.",
+  "An advanced robotic astronaut exploring the surface of an exoplanet, its body covered in adaptive plating, equipped with AI-driven sensors scanning for signs of alien life.",
+  "A hyper-realistic robotic sculptor using AI to carve intricate designs into metal and stone, creating breathtaking futuristic art in an avant-garde gallery.",
+  "A futuristic AI-powered robotic medic performing life-saving surgery with laser precision, its articulated limbs adjusting dynamically while a holographic display provides real-time data.",
+  "A battle-ready exosuit with retractable plasma weapons, worn by a highly advanced robotic soldier standing in a cyberpunk warzone with neon lights reflecting off its armor.",
+  "A quantum-powered AI hub, where thousands of interconnected robotic processors form a vast neural network, glowing softly as they exchange data in real time.",
+  "A massive robotic cargo carrier with hydraulic limbs, lifting entire shipping containers effortlessly at a high-tech, fully automated spaceport.",
+  "A futuristic robotic wildlife park where AI-driven mechanical animals roam freely, replicating the behaviors of real creatures in a perfect synthetic ecosystem."
 ];
 
 
